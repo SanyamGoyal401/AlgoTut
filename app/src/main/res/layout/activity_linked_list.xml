@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LinkedList">
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Linked List"
+        android:textStyle="bold"
+        android:textSize="36sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="409dp"
+        android:layout_height="795dp"
+        android:layout_marginTop="14dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:padding="12dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView4">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp"
+            tools:ignore="ExtraText">
+            <TextView
+                android:id="@+id/linkedlistintro"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:justificationMode="inter_word"
+                android:text="A linked list is a linear data structure where each element is a separate object, known as a node . Each node contains some data and points to the next node in the structure, forming a sequence. The nodes may be at different memory locations, unlike arrays where all the elements are stored continuously."
+                android:textSize="24sp"
+                android:textColor="@color/black"/>
+            <ImageView
+                android:layout_margin="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/linkedlist"/>
+            <TextView
+                android:layout_margin="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Advantages over Arrays"
+                android:textSize="36sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_margin="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="&#x02022; A linked list is not fixed in size. The memory locations to store the nodes are allocated dynamically when each node is created. There is no wastage of memory for unused locations."
+                android:textSize="24sp"
+                android:justificationMode="inter_word"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_margin="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="&#x02022; A quick manipulation of the links between the nodes allows for a constant time taken for insertion and deletion."
+                android:textSize="24sp"
+                android:justificationMode="inter_word"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_margin="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Creating a Linked List"
+                android:textSize="36sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:justificationMode="inter_word"
+                android:text="For the linked list to be created, we need to define a node first depending on the type of linked list we want to create. Each type of list has specific properties and its own merits regarding the list operations."
+                android:textSize="24sp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_margin="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Types of Linked List"
+                android:textSize="36sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_margin="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="1. Singly Linked List\n2. Doubly Linked List\n3.Circular Linked List"
+                android:textSize="24sp"
+                android:justificationMode="inter_word"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

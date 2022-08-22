@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Trees">
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Trees"
+        android:textStyle="bold"
+        android:textSize="36sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="409dp"
+        android:layout_height="795dp"
+        android:layout_marginTop="14dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:padding="12dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView4">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp"
+            tools:ignore="ExtraText">
+            <TextView
+                android:id="@+id/arrayintro"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:justificationMode="inter_word"
+                android:text="A tree is a data structure that simulates a hierarchical tree, with a root value and the children as the subtrees, represented by a set of linked nodes. The children of each node could be accessed by traversing the tree until the specified value is reached"
+                android:textSize="24sp"
+                android:textColor="@color/black"/>
+            <ImageView
+                android:layout_margin="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/trees"/>
+            <TextView
+                android:layout_margin="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Basic Terminology"
+                android:textSize="36sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_margin="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Before exploring trees, we need to learn of the basic terminologies associated with them:"
+                android:textSize="24sp"
+                android:justificationMode="inter_word"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_margin="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Root"
+                android:textSize="36sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_margin="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="The first node in a tree is called as Root Node. Every tree must have one Root Node."
+                android:textSize="24sp"
+                android:justificationMode="inter_word"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_margin="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Parent Node"
+                android:textSize="36sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_margin="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="The node which is a predecessor of any node is called a Parent Node, that is, the node which has a branch from it to any other node is called as the Parent node."
+                android:textSize="24sp"
+                android:justificationMode="inter_word"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_margin="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Child Node"
+                android:textSize="36sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_margin="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="The node which is descendant of any node is called as Child Node. Any parent node can have any number of child nodes. All the nodes except root are child nodes."
+                android:textSize="24sp"
+                android:justificationMode="inter_word"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_margin="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Siblings"
+                android:textSize="36sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_margin="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Nodes which belong to the same Parent are called as Siblings."
+                android:textSize="24sp"
+                android:justificationMode="inter_word"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_margin="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Leaf Node"
+                android:textSize="36sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_margin="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="In a tree data structure, the node which does not have a child is called a Leaf Node. They are also known as External Nodes or Terminal Nodes."
+                android:textSize="24sp"
+                android:justificationMode="inter_word"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_margin="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Internal Nodes"
+                android:textSize="36sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_margin="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="The node which has at least one child is called an Internal Node."
+                android:textSize="24sp"
+                android:justificationMode="inter_word"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_margin="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="External Nodes"
+                android:textSize="36sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_margin="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="The node which has no child is called an External Node."
+                android:textSize="24sp"
+                android:justificationMode="inter_word"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_margin="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Degree"
+                android:textSize="36sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_margin="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text=" The total number of children of a node is called a Degree of that Node. The highest degree of a node among all the nodes in a tree is called the Degree of the tree."
+                android:textSize="24sp"
+                android:justificationMode="inter_word"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_margin="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Level"
+                android:textSize="36sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_margin="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="In a tree, each step from top to bottom is called a Level."
+                android:textSize="24sp"
+                android:justificationMode="inter_word"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_margin="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Height"
+                android:textSize="36sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_margin="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="The total number of edges from the leaf node to a particular node in the longest path is called as Height of that Node."
+                android:textSize="24sp"
+                android:justificationMode="inter_word"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_margin="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Depth"
+                android:textSize="36sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_margin="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text=" The total number of edges from the root node to a particular node is called the Depth of that Node."
+                android:textSize="24sp"
+                android:justificationMode="inter_word"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_margin="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Path"
+                android:textSize="36sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_margin="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="The sequence of Nodes and Edges from one node to another node is called a Path."
+                android:textSize="24sp"
+                android:justificationMode="inter_word"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

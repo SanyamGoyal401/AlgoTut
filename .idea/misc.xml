@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/HP/AndroidStudioProjects/AlgoTuT/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.1" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/AlgoTuT/app/src/main/res/layout/Tasks.xml" value="0.12329234972677595" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/AlgoTuT/app/src/main/res/layout/activity_array.xml" value="0.128" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/AlgoTuT/app/src/main/res/layout/activity_calender.xml" value="0.1" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/AlgoTuT/app/src/main/res/layout/activity_graph.xml" value="0.1" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/AlgoTuT/app/src/main/res/layout/activity_hashing.xml" value="0.15756578947368421" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/AlgoTuT/app/src/main/res/layout/activity_heap.xml" value="0.15756578947368421" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/AlgoTuT/app/src/main/res/layout/activity_index_ds.xml" value="0.15789473684210525" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/AlgoTuT/app/src/main/res/layout/activity_linked_list.xml" value="0.15789473684210525" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/AlgoTuT/app/src/main/res/layout/activity_main.xml" value="0.176" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/AlgoTuT/app/src/main/res/layout/activity_notes.xml" value="0.12329234972677595" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/AlgoTuT/app/src/main/res/layout/activity_notes_class.xml" value="0.1" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/AlgoTuT/app/src/main/res/layout/activity_queue.xml" value="0.1" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/AlgoTuT/app/src/main/res/layout/activity_splash.xml" value="0.1555921052631579" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/AlgoTuT/app/src/main/res/layout/activity_stack.xml" value="0.1" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/AlgoTuT/app/src/main/res/layout/activity_tasks.xml" value="0.1" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/AlgoTuT/app/src/main/res/layout/activity_trees.xml" value="0.15756578947368421" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/AlgoTuT/app/src/main/res/layout/codingcontest.xml" value="0.1" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/AlgoTuT/app/src/main/res/layout/fragment_blank.xml" value="0.15789473684210525" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/AlgoTuT/app/src/main/res/layout/fragment_coders_calender.xml" value="0.1" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/AlgoTuT/app/src/main/res/layout/heading.xml" value="0.15789473684210525" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/AlgoTuT/app/src/main/res/layout/item_note.xml" value="0.1" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/AlgoTuT/app/src/main/res/layout/title_bar.xml" value="0.15789473684210525" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

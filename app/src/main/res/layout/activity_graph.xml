@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Graph">
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Graphs"
+        android:textStyle="bold"
+        android:textSize="36sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="409dp"
+        android:layout_height="795dp"
+        android:layout_marginTop="14dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:padding="12dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView4">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp"
+            tools:ignore="ExtraText">
+            <TextView
+                android:id="@+id/arrayintro"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:justificationMode="inter_word"
+                android:text="A graph data structure is used to represent relations between pairs of objects .\nIt consists of nodes (known as vertices) that are connected through links (known as edges). The relationship between the nodes can be used to model the relation between the objects in the graph. This is what makes graphs important in the real world."
+                android:textSize="24sp"
+                android:textColor="@color/black"/>
+            <ImageView
+                android:layout_margin="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/graph"/>
+            <TextView
+                android:layout_margin="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:justificationMode="inter_word"
+                android:text="It can be viewed as a generalization of the tree data structure as any kind of relationship can exist between the nodes of a tree, instead of the purely parent-child relationship of a tree."
+                android:textSize="24sp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_margin="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:justificationMode="inter_word"
+                android:text="Mathematically, Graph G is an ordered set (V, E) where V(G) represents the set of elements, called vertices, and E(G) represents the edges between these vertices.\n\nA graph can be classified into 2 types:"
+                android:textSize="24sp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_margin="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Undirected Graphs"
+                android:textSize="36sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_margin="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="An undirected graph does not have any directed associated with its edges. This means that any edge could be traversed in both ways.\nMathematically, an edge is represented by an unordered pair [u, v] and can be traversed from u to v or vice-versa."
+                android:textSize="24sp"
+                android:justificationMode="inter_word"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_margin="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Directed Graphs"
+                android:textSize="36sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_margin="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="A directed graph has a direction associated with its edges. This means that any edge could be traversed only in the way of the direction.\nMathematically, an edge is represented by an ordered pair [u, v] and can only be traversed from u to v."
+                android:textSize="24sp"
+                android:justificationMode="inter_word"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_margin="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text= "Basic Terminology in a graph"
+                android:textSize="36sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_margin="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Vertex"
+                android:textSize="24sp"
+                android:textColor="@color/purple_700"/>
+            <TextView
+                android:layout_margin="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="An individual data element of a graph is called Vertex."
+                android:textSize="24sp"
+                android:justificationMode="inter_word"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_margin="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Edge"
+                android:textSize="24sp"
+                android:textColor="@color/purple_700"/>
+            <TextView
+                android:layout_margin="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="An edge is a connecting link between two vertices. An Edge is also known as Arc."
+                android:textSize="24sp"
+                android:justificationMode="inter_word"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_margin="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Mixed Graph"
+                android:textSize="24sp"
+                android:textColor="@color/purple_700"/>
+            <TextView
+                android:layout_margin="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="A graph with undirected and directed edges is said to be a mixed graph."
+                android:textSize="24sp"
+                android:justificationMode="inter_word"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_margin="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="origin"
+                android:textSize="24sp"
+                android:textColor="@color/purple_700"/>
+            <TextView
+                android:layout_margin="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text=" If an edge is directed, its first endpoint is said to be the origin of it."
+                android:textSize="24sp"
+                android:justificationMode="inter_word"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_margin="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Destination"
+                android:textSize="24sp"
+                android:textColor="@color/purple_700"/>
+            <TextView
+                android:layout_margin="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="If an edge is directed, its first endpoint is said to be the origin of it and the other endpoint is said to be the destination of the edge."
+                android:textSize="24sp"
+                android:justificationMode="inter_word"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_margin="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Adjacency"
+                android:textSize="24sp"
+                android:textColor="@color/purple_700"/>
+            <TextView
+                android:layout_margin="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Two node or vertices are adjacent if they are connected through an edge."
+                android:textSize="24sp"
+                android:justificationMode="inter_word"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_margin="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Path"
+                android:textSize="24sp"
+                android:textColor="@color/purple_700"/>
+            <TextView
+                android:layout_margin="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="The Path represents a sequence of edges between the two vertices."
+                android:textSize="24sp"
+                android:justificationMode="inter_word"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_margin="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Degree"
+                android:textSize="24sp"
+                android:textColor="@color/purple_700"/>
+            <TextView
+                android:layout_margin="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="The total number of edges connected to a vertex is said to be the degree of that vertex."
+                android:textSize="24sp"
+                android:justificationMode="inter_word"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_margin="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="In - Degree"
+                android:textSize="24sp"
+                android:textColor="@color/purple_700"/>
+            <TextView
+                android:layout_margin="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="In-degree of a vertex is the number of edges which are coming into the vertex."
+                android:textSize="24sp"
+                android:justificationMode="inter_word"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_margin="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Out - Degree"
+                android:textSize="24sp"
+                android:textColor="@color/purple_700"/>
+            <TextView
+                android:layout_margin="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Out-degree of a vertex is the number of edges which are going out from the vertex."
+                android:textSize="24sp"
+                android:justificationMode="inter_word"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_margin="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Minimum Spanning Tree(MST)"
+                android:textSize="24sp"
+                android:textColor="@color/purple_700"/>
+            <TextView
+                android:layout_margin="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="A minimum spanning tree (MST) is a subset of the edges of a connected, edge-weighted (un)directed graph that connects all the vertices, without any cycles and with the minimum possible total edge weight."
+                android:textSize="24sp"
+                android:justificationMode="inter_word"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_margin="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Simple Graph"
+                android:textSize="24sp"
+                android:textColor="@color/purple_700"/>
+            <TextView
+                android:layout_margin="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text=" A graph is said to be simple if there are no parallel and self-loop edges."
+                android:textSize="24sp"
+                android:justificationMode="inter_word"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_margin="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Directed Acyclic Graph(DAG)"
+                android:textSize="24sp"
+                android:textColor="@color/purple_700"/>
+            <TextView
+                android:layout_margin="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text=" A directed acyclic graph (DAG) is a graph that is directed and without cycles connecting the other edges. This means that it is impossible to traverse the entire graph starting at one edge."
+                android:textSize="24sp"
+                android:justificationMode="inter_word"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_margin="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Weighted Graph"
+                android:textSize="24sp"
+                android:textColor="@color/purple_700"/>
+            <TextView
+                android:layout_margin="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="A weighted graph is a graph in which a number (known as the weight) is assigned to each edge. Such weights might represent for example costs, lengths or capacities, depending on the problem."
+                android:textSize="24sp"
+                android:justificationMode="inter_word"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_margin="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Complete Graph"
+                android:textSize="24sp"
+                android:textColor="@color/purple_700"/>
+            <TextView
+                android:layout_margin="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="A complete graph is a graph in which each pair of vertices is joined by an edge. A complete graph contains all possible edges."
+                android:textSize="24sp"
+                android:justificationMode="inter_word"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_margin="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Connected Graph"
+                android:textSize="24sp"
+                android:textColor="@color/purple_700"/>
+            <TextView
+                android:layout_margin="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="A connected graph is an undirected graph in which every unordered pair of vertices in the graph is connected. Otherwise, it is called a disconnected graph."
+                android:textSize="24sp"
+                android:justificationMode="inter_word"
+                android:textColor="@color/black"/>
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Queue">
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Queues"
+        android:textStyle="bold"
+        android:textSize="36sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="409dp"
+        android:layout_height="795dp"
+        android:layout_marginTop="14dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:padding="12dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView4">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp"
+            tools:ignore="ExtraText">
+            <TextView
+                android:id="@+id/arrayintro"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:justificationMode="inter_word"
+                android:text="A queue is a linear data structure that stores data in an order known as the First In First Out order. This property is helpful in certain programming cases where the data needs to be ordered."
+                android:textSize="24sp"
+                android:textColor="@color/black"/>
+            <ImageView
+                android:layout_margin="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/queue"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:justificationMode="inter_word"
+                android:text="Queues can be visualised like a real-life queue of people. A person may join the queue from the end and may leave tit from the front. The first person to enter leaves first.\n\nA ticket counter can be an example where the people standing in the queue get their tickets one by one and leave the queue."
+                android:textSize="24sp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_margin="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Creating a Queue"
+                android:textSize="36sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:justificationMode="inter_word"
+                android:text="A queue can be created using both an array or through a linked list. For simplicity, we will create a queue with an array.\n1.Create a one dimensional array with the above defined SIZE. (int queue[SIZE])\n2.Define two integer variables front and rear and initialize both with \‘-1\’. ( int front = -1, rear = -1)"
+                android:textSize="24sp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_margin="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="#define SIZE 10\nint queue[SIZE]\;\nint front = -1\, rear = -1\;"
+                android:textColor="@color/purple_700"
+                android:textSize="24sp"/>
+            <TextView
+                android:layout_margin="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Operations in a Queue"
+                android:textSize="36sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_margin="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="The two primary operations in a queue are the enqueue and the dequeue operations:"
+                android:textSize="24sp"
+                android:justificationMode="inter_word"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_margin="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Enqueue Operations"
+                android:textSize="36sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_margin="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="The Enqueue is used to add an element to the queue. The element always gets added to the end of the current queue items."
+                android:textSize="24sp"
+                android:justificationMode="inter_word"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_margin="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="void enqueue(int value) {\n   if(rear &#x0003D;&#x0003D; SIZE-1)  printf(&quot;\\nOverflow. Queue is Full&quot;)\;\n   else{\n     if(front == -1)\n      front = 0\;\n     rear++\;\n     queue[rear] = value\;\n     printf(&quot;\\nInsertion was successful&quot;)\;\n   }\n}"
+                android:textColor="@color/purple_700"
+                android:textSize="24sp"/>
+            <TextView
+                android:layout_margin="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Dequeue Operations"
+                android:textSize="36sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_margin="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="The Dequeue is used to remove an element from the queue. The element always gets removed from the front of the queue."
+                android:textSize="24sp"
+                android:justificationMode="inter_word"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_margin="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="void dequeue() {\n   if(front &#x0003D;&#x0003D; rear)\n     printf(&quot;\\nUnderflow. Queue is empty.&quot;)\;\n     else{\n     printf(&quot;Deleted item is: \%d&quot;, queue[front])\;\n     front++\;\n     if(front == rear)\n        front = rear - 1\;\n   }\n}"
+                android:textColor="@color/purple_700"
+                android:textSize="24sp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
